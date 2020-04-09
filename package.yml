@@ -1,0 +1,11 @@
+package: naju_seo
+version: '0.0.1'
+author: NAJU Sachsen
+supportpage: https://github.com/NAJU-Sachsen/rex-seo
+requires:
+  redaxo: '^5.10'
+  php: '>=7.1'
+page:
+  title: 'SEO'
+  icon: rex-icon fa-search-plus
+  perm: admin
