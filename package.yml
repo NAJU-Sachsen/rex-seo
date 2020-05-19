@@ -9,3 +9,6 @@ page:
   title: 'SEO'
   icon: rex-icon fa-search-plus
   perm: admin
+  subpages:
+    meta_tags:
+      title: Metatags
