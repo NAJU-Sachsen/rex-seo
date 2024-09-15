@@ -18,3 +18,8 @@ if ($seo_table->exists()) {
 
     rex_sql::factory()->setQuery('insert into naju_seo (meta_key, meta_value) values (:key, :val)', ['key' => 'description', 'val' => '']);
 }
+
+rex_sql_table::get('naju_contact_info')
+    ->ensureColumn(new rex_sql_column('seo_title_prefix', 'varchar(120)'))
+    ->ensureColumn(new rex_sql_column('seo_description', 'text'))
+    ->alter();
